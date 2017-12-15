@@ -1,0 +1,70 @@
+\BOOKMARK [0][-]{chapter*.4}{LIST OF TABLES}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{LIST OF ILLUSTRATIONS}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Introduction to optical networks}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Routing in optical network}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Advanced and immediate reservation}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Introduction to Survivability}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{Centrally Controlled network}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 9
+\BOOKMARK [1][-]{section.2.1}{The Controller OSCARS}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{History}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{How OSCAR works?}{section.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Resource Scheduling}{subsection.2.1.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.1.2.2}{Path Computation}{subsection.2.1.2}% 14
+\BOOKMARK [2][-]{subsection.2.1.3}{Components of OSCARS 1.0 Prototype}{section.2.1}% 15
+\BOOKMARK [1][-]{section.2.2}{Traffic Generator}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{The Controller Interface}{section.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Service Components}{subsection.2.2.1}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{Request Components}{subsection.2.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.1.3}{Response Components}{subsection.2.2.1}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.1.4}{Other Service Components and Utilities}{subsection.2.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.2.2}{Rest API}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.3}{Configuration files}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Network Survivability}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.3.1}{Fault tolerance issues in infrastructure layer}{section.2.3}% 25
+\BOOKMARK [3][-]{subsubsection.2.3.1.1}{Failure detection and Location}{subsection.2.3.1}% 26
+\BOOKMARK [3][-]{subsubsection.2.3.1.2}{Failure Recovery}{subsection.2.3.1}% 27
+\BOOKMARK [2][-]{subsection.2.3.2}{Algorithms for Network Survivability}{section.2.3}% 28
+\BOOKMARK [3][-]{subsubsection.2.3.2.1}{Bhandari's link disjoint}{subsection.2.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.2.3.2.2}{Iterative Shortest Path}{subsection.2.3.2}% 30
+\BOOKMARK [0][-]{chapter.3}{Topology and Traffic Modelling}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Augmented ESNet Topology}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{Traffic Generation}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{Traffic Modelling}{section.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Arrival time distribution}{subsection.3.2.1}% 35
+\BOOKMARK [3][-]{subsubsection.3.2.1.2}{Exponential Service Times}{subsection.3.2.1}% 36
+\BOOKMARK [3][-]{subsubsection.3.2.1.3}{ Bandwidth Distribution}{subsection.3.2.1}% 37
+\BOOKMARK [3][-]{subsubsection.3.2.1.4}{Device Distribution}{subsection.3.2.1}% 38
+\BOOKMARK [2][-]{subsection.3.2.2}{Input parameters for traffic generation}{section.3.2}% 39
+\BOOKMARK [0][-]{chapter.4}{Link failure distribution and its effects}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{Failure characteristic and distribution}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.3}{Failure and Repair Rates}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.4}{Effects of Failure Assumptions}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.5}{Factors influencing failures in the network}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.5.1}{MTBF and MTTR}{section.4.5}% 46
+\BOOKMARK [2][-]{subsection.4.5.2}{Distance and hop counts}{section.4.5}% 47
+\BOOKMARK [1][-]{section.4.6}{Holding time}{chapter.4}% 48
+\BOOKMARK [0][-]{chapter.5}{Performance evaluation of Unicast Survivability }{}% 49
+\BOOKMARK [1][-]{section.5.1}{Setting up the environment}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.2}{Effects of Palindromic Path}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.2.1}{Palindrome}{section.5.2}% 52
+\BOOKMARK [2][-]{subsection.5.2.2}{Non-Palindrome}{section.5.2}% 53
+\BOOKMARK [1][-]{section.5.3}{Performance Analysis}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.4}{Comparative analysis of unicast survivability}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.4.1}{Blocking Probability}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.2}{Resource allocation}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.3}{ Failure Probability }{section.5.4}% 58
+\BOOKMARK [0][-]{chapter.6}{Risk-Aware Partially Disjoint Iterative Djikstra}{}% 59
+\BOOKMARK [1][-]{section.6.1}{Proposed Modification to Iterative SP}{chapter.6}% 60
+\BOOKMARK [2][-]{subsection.6.1.1}{Link Pruning}{section.6.1}% 61
+\BOOKMARK [2][-]{subsection.6.1.2}{Risk aware PDID Routing}{section.6.1}% 62
+\BOOKMARK [3][-]{subsubsection.6.1.2.1}{Iterative Shortest Path}{subsection.6.1.2}% 63
+\BOOKMARK [2][-]{subsection.6.1.3}{Effects of Risk PDID link pruning}{section.6.1}% 64
+\BOOKMARK [1][-]{section.6.2}{Performance analysis of Risk aware PDID}{chapter.6}% 65
+\BOOKMARK [2][-]{subsection.6.2.1}{Blocking Probability}{section.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.2.2}{Failure}{section.6.2}% 67
+\BOOKMARK [1][-]{section.6.3}{Releasing the resources of failed path\(s\)}{chapter.6}% 68
+\BOOKMARK [0][-]{chapter.7}{conclusion}{}% 69
+\BOOKMARK [0][-]{chapter*.44}{LITERATURE CITED}{}% 70

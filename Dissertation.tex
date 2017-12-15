@@ -1,0 +1,86 @@
+% !TEX spellcheck = en_US
+
+\input{docs/preamble}
+\graphicspath{{./figs/}}
+
+\begin{document}
+
+\begin{doublespace}
+
+\chapter*{ABSTRACT}
+\input{docs/abstract}
+
+
+\chapter*{ACKNOWLEDGMENTS}
+\input{docs/acknowledgments}
+
+
+\begin{onehalfspace}
+\tableofcontents
+\listoftables
+\listoffigures
+\end{onehalfspace}
+
+\mainmatter
+
+\setcounter{page}{0}
+
+
+% CHAPTER 1 %
+\begin{singlespace}
+\newcommand{\chapterOneName}{Introduction}
+\chapter[\chapterOneName]{\MakeUppercase\chapterOneName} \label{chapter:introduction}
+\end{singlespace}
+\input{chapter1/Introduction.tex}
+
+% CHAPTER 2 %
+\begin{singlespace}
+\newcommand{\chapterTwoName}{Background}
+%\chapter[\chapterTwoName]{\MakeUppercase\chapterTwoName~\footnote{Portions of this work have been previously published in collaboration with Vinod M. Vokkarane \cite{dummyRef}.}}\label{chapter:two}
+\chapter[\chapterTwoName]{\MakeUppercase\chapterTwoName} \label{chapter:background}
+\end{singlespace}
+\input{chapter2/c2.tex}
+
+% CHAPTER 3 %
+\begin{singlespace}
+\newcommand{\chapterThreeName}{Network Topology and Failures}
+\chapter[\chapterThreeName]{\MakeUppercase\chapterThreeName}\label{chapter:c3}
+\end{singlespace}
+\input{chapter3/c3.tex}
+
+% CHAPTER 4 %
+\begin{singlespace}
+\newcommand{\chapterFourName}{Effects of Simulation Assumptions}
+\chapter[\chapterFourName]{\MakeUppercase\chapterFourName}\label{chapter:c4}
+\end{singlespace}
+\input{chapter4/c4.tex}
+
+% CHAPTER 5 %
+\begin{singlespace}
+\newcommand{\chapterFiveName}{Performance evaluation of Unicast Survivability }
+\chapter[\chapterFiveName]{\MakeUppercase\chapterFiveName}\label{chapter:c5}
+\end{singlespace}
+\input{chapter5/c5.tex}
+
+% CHAPTER 6 %
+\begin{singlespace}
+\newcommand{\chapterSixName}{Risk-Aware Partially Disjoint Iterative Djikstra}
+\chapter[\chapterSixName]{\MakeUppercase\chapterSixName}\label{chapter:c6}
+\end{singlespace}
+\input{chapter6/c6.tex}
+
+% CHAPTER 7 %
+\begin{singlespace}
+\newcommand{\chapterSevenName}{conclusion}
+\chapter[\chapterSevenName]{\MakeUppercase\chapterSevenName}\label{chapter:c6}
+\end{singlespace}
+\input{chapter7/c7.tex}
+
+\begin{onehalfspace}
+\backmatter
+\bibliographystyle{IEEEtran}
+\bibliography{refs/DissertationReferences}
+\end{onehalfspace}
+
+\end{doublespace}
+\end{document}

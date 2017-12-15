@@ -1,0 +1,36 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Illustration of Basic PCE Service Execution in OSCARS\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Traffic Generator Architecture\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Bhandari's Disjoint Path Pair Algorithm. (a) Finds the shortest path using Djikstra (b) Reverses the edges of that shortest path with negative costs and once again runs the shortest path algorithm but this time bellman ford due to the introduction of negative edge costs (c)Removes the inverse edges obtained from running the above two (d) Puts all paths back on and hence the two link disjoint paths\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Iterative Disjoint Shortest path Algorithm (a) Find the shortest path with Djikstra (b) Remove the links in first shortest path from the network and run Djikstra again (c) Add all the paths\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Problem with iterative SP approach\relax }}{19}{figure.caption.13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Augmented ESnet Topology\relax }}{20}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Exponential PDF\relax }}{23}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces PDF of Normal Distribution\relax }}{26}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces PDF of Uniform Distribution\relax }}{27}{figure.caption.17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Bathtub Curve\relax }}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Augmented ESnet Topology with MTTF and MTTR\relax }}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Failure arrivals over time\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Link failure overlaps over time\relax }}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Effect of distance w.r.t failure\relax }}{37}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Holding time Vs Failure\relax }}{38}{figure.caption.28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Setting up the environment\relax }}{39}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Palindromic PCE in ESnet\relax }}{40}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Palindrome Vs Non-Palindrome - Blocking\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Palindrome Vs Non-Palindrome - Failure\relax }}{42}{figure.caption.32}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Iterative disjoint SP Vs Bhandari - Blocking\relax }}{44}{figure.caption.33}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Iterative SP Vs Bhandari - Hop counts\relax }}{45}{figure.caption.34}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Iterative disjoint SP Vs Bhandari - Failure\relax }}{46}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Illustration of path distance for primary and backup paths\relax }}{47}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Individual path failures of Iterative and Bhandari\relax }}{48}{figure.caption.37}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Risk-aware Iterative partially disjoint shortest path (a) Find the shortest path in the network (b) Remove the links as specified in the section 6.1.1 and run the Djikstra again (c)Add both the paths back on\relax }}{51}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Comparative analysis of Iterative shortest path, Bhandari shortest path and Risk aware PDID for blocking\relax }}{52}{figure.caption.40}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Comparative analysis of Iterative shortest path, Bhandari shortest path & Risk aware IPDSP for failure\relax }}{53}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Comparative analysis of Iterative Shortest path, Bhandari shortest path & Risk aware PDID for blocking after releasing resources of failed connections\relax }}{54}{figure.caption.42}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

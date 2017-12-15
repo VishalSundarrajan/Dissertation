@@ -1,0 +1,63 @@
+% !TEX root = ../Dissertation.tex
+% !TEX spellcheck = en_US
+
+% THIS IS THE FIRST CHAPTER %
+\noindent 
+
+\section{Introduction to optical networks}
+
+The application in social media, mobile devices, and cloud computing increases the growth of Internet traffic in recent years. In order to serve these high data traffic, the medium through which data travels should handle huge amount of data with high speed. There are two options available that offer the means to transport data- one is copper wire and other is optical fiber. The latter is far superior to the former.
+
+Optical network is a data communication network built with optical fiber technology. It uses fiber optic cable as the medium of transmission for converting and passing data in the form of light pulses between sender and receiver nodes. Since it uses light as a medium they travel faster and supports greater bandwidth than the electrical signals traveling through copper wire. The data loss is also lower and thereby reducing the intermediate signal boosters. Because of these reasons, Optical network is largely employed to carry traffic in high speed backbone networks.
+
+Since optical networks use light and light comes in many different colors, these different colors can be combined on the same fiber. The goal here, is to have signals not interfere with each other. To achieve this, light can be generated at various wavelengths and switched between different wavelength channels. This is called the Wavelength-Division Multiplexing (WDM). In an all-optical network, signals remain in optical domain from sender to receiver node without being converted to electrical, thus eliminating the electro-optic bottleneck [1]. The optical network consists of optical wavelength routing nodes interconnected by optical fiber links. This allows a light path(s) to be established between any two nodes, thus representing a direct optical connection between any two routing nodes. It is normally required to use the same wavelength along the light path. This limitation is called wavelength continuity constraint. This constraint can also be relaxed with wavelength converters. Although, it is very expansive to have an optical network with network nodes that have the capability of wavelength conversion[2].
+
+\section{Routing in optical network}
+
+In optical network there are two problems to establish a light path. The first is to determine a path along which the light path can be established. The second is to assign a wavelength to the selected path based on whether the node has capability to convert wavelengths. The existing light paths cannot be re-routed to accommodate the new light path until they release the wavelength. Hence, some light path requests cannot be established if they have no free wavelengths. There are two common approaches to solve this routing and wavelength assignment problem, fixed and adaptive routing.
+
+Fixed routing can further be classified in to fixed and fixed alternate. In fixed, the routing problem is first solved between each pair of nodes before assigning a wavelength. This is the simplest but ineffective approach. This is because a fixed route is predetermined and if it's in use, the future request for light paths may not be established if there are no free wavelengths although an alternative path exists. A slight modification to fixed path routing is fixed alternate. Instead of one fixed path between nodes, fixed alternate calculates 'n' number of paths between a pair of nodes. This increases the probability of success of setting up the light path as it has more than one path this time. The major drawback of both these approaches is that neither of them considers current state of the network. If the predetermined fixed path(s) are not available, then it will not set up the light path. But an adaptive routing approach considers the current state of the network. It is an unconstrained routing scheme that considers all the paths between any two nodes and a shortest path can be obtained by dynamic shortest path algorithms based on link costs at the time of light path requests. We will cover more about adaptive routing in the upcoming chapters.
+
+\section{Advanced and immediate reservation}
+
+These are the provisioning mechanisms that are different from each other based on the application. Immediate reservation needs to set up the light path immediately whereas advanced reservation does not. In advanced reservation, network operator knows the exact serving time of light path set up. This thesis considers that the requests for light path arrives in advance. This means that if a request for light path arrives, then the serving time is considered to be somewhere in future.
+
+\section{IP over Optical networks}
+
+Emerging use of optical network for transport technologies lead to innovations in optical core networks. This moved Internet transport infrastructure towards modeling of high-speed optical routers interconnected by optical switches []. Equipments for wavelength division multiplexing such as reconfigurable optical cross connects (OXC) have emerged sufficiently to build very high capacity networks. Also, WDM enables multiple OC-48 (2.5 Gbps) and OC-192 (10 Gbps) communication channels in the form of wavelengths or frequencies to operate in parallel over a single fiber optic cable. There are several architectures introduced in the past to integrate IP and WDM technologies [ip over optical networks:architectural aspects]. This research puts a little effort to explain one of the very common architectures, Interconnection models. 
+
+\subsection{Interconnected models}
+Interconnected model consists of IP routers attached to an optical core networks. See figure 1.1. IP router is a device capable to support IP routing [www.metaswitch.com]. There can be more than one IP routing approach as specified in [ip over optical networks:architectural aspects]. On the other hand, the optical core network consists of multiple optical cross connects interconnected by fiber optic links.These OXCs are capable of switching a data stream using switching function, controlled by properly configuring the cross connect table [Survivability in ip over wdm netwroks]. Thus, a switched optical path is established between IP routers. We will discuss more about these routing (IP routing) and switching (OXC) in chapter 3.
+
+\section{Logical connection in IP over optical network}
+In the previous section, it is understood that IP routing is possible in optical networks. In IP networks, setting up the path between two nodes can be realized logically rather physically. For example, a logical connection spans multiple physical nodes and links that are part of separate physical network. That means, a logical connection is a virtual representation but appears as a separate and self-contained network even though it might physically constitute a small portion of a large network. To achieve this virtual logical connection set up, each connection has been given its own connection resources. This resources include bandwidth availability in fiber links, ports, and vlan tags [www.lifewire.com] availability. Each end to end connection is backed by a vlan tag.
+
+\section{Introduction to Survivability}
+
+Since optical networks carry high volume of data, any disruption in connection can cause economic and social damages. Hence, it is extremely important to ensure that communications crossing these links and networks are properly protected. However, the physical layer of optical network is vulnerable to a variety of failures. These failures may be planned or unplanned. Almost 25 percent of failures in networks are planned due to maintenance []. But, unplanned failures may lead to logical connection disruption because its unpredictable and beyond network operator's knowledge. These failures may happen due to disasters, digging works, terrorist attacks etc.,. Chapter 4 explains more on how these accidental failures are distributed in the network and its effect in the network. 
+
+Survivability is the ability of protecting the connection from failures. Extensive research has already been done on the design of survivable algorithms for different transport technologies []. They can be applied to any network not just optical. We will discuss these algorithms briefly in chapter 2. Survivability in optical networks can be achieved by providing two paths, primary and backup in advance. These two paths are disjoint, means they do not share any common fiber links or optical components along the path. The idea is to make routing diverse as possible so that failure in primary would not affect backup paths. Once the primary path is failed, the traffic should be switched to corresponding backup path, such that the connection can be protected. This approach is called path protection. One of the prime motives of this research is to make a comparative analysis of three path protection algorithms, two existing and one proposed based on performance metrics as specified in chapter 5.
+
+\section{Centrally Controlled network}
+
+In this research, we assume that our network is centrally controlled. Current trend towards centrally controlled networks relies on the separation of hardware and software. In a centralized architecture, the controller hosts all the logic in the central location. This way, it is easy to decouple the software logic from network nodes, thus provide a greater visibility and control over the network [] .
+
+Relating this centrally controlled approach to our problem, the logically centralized controller (software) handles the process of setting up the light path over the optical nodes (hardware). Also, the controller has the central view and hence it is easy for the controller to locate the failure in a reasonable time[]. Chapter 2 explains more briefly about the operation of this central controller.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

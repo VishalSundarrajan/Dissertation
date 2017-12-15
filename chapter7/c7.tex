@@ -1,0 +1,26 @@
+% !TEX root = ../Dissertation.tex
+% !TEX spellcheck = en_US
+
+% THIS IS THE SECOND CHAPTER %
+\noindent 
+
+Although Bhandari does better than other two at higher loads, it still uses more resources and blocks more than Risk aware PDID at lower loads. Using iterative SP and risk aware PDID, the average resources for all the connections is brought down by 1 for both primary and backup. While this may not be beneficial for link failures, it may be a crucial factor for node failures. Since Bhandari distributes the load better than others, it has high chances of connection disruption due to nodal failures. This thesis argues, a slightly modified iterative approach at lower loads can offer less blocking with a neglectful increase in failure. Results showed that Risk aware PDID could benefit network operating at 13 \% blocking for the traffic characteristics discussed in chapter 3 and 4. Table 7.1 tabulated the results obtained above based on considered parameters in this research,
+
+	%Table 7.1 Load based survivable approach
+
+\begin{table}
+\centering
+\caption{Load driven survivable approach}
+ 	\begin{tabular}{|c|c|c|c|}
+	\hline\hline
+	\textbf{QOS} & \textbf{Holding Time} & \textbf{Survivability approach} & \textbf{Load}\\
+	\hline
+	High priority & Long & Bhandari & High\\
+	High priority& Short&Iterative shortest path&Low\\
+	Low priority&Long&Bhandari/Risk aware IPDSP&Low\\
+	Low priority&Short&Risk aware IPDSP&Low\\
+	\hline
+	\end{tabular}
+\end{table}
+
+For this network, the working range of load is found out after so many trials. However, this threshold can be easily obtained for the intended traffic behavior. Since we considered that connections are set in advance, it is very complex to predict the future traffic behavior and apply the approach. Also, it is very hard to see a load invariant traffic characteristics in a network. That said, the approached could still be applied to varying loads in the network depending on the holding time of the connection as it may vary from minutes to even years. For example, if the connection has short holding time requested at lower operational load, Bhandari may not be clever option. At the same time, if the holding time is longer and the operator is unsure of future traffic characteristics, Bhandari is the safest option. However, an intensive research should be conducted based on intended input traffic characteristics, failure characteristics and load in order to apply the above approaches.  
